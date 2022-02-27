@@ -1,0 +1,228 @@
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* CSS Reset =========================== */
+body, nav, section, footer, article,
+h1, h2, h3, p, a, ul, li, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+/* Typography Defaults ================= */
+html {font-size: 62.5%;}
+
+body {
+    font: 1.4rem/1.6 "Noto Sans", sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+body {text-transform: capitalize;}
+
+h1 {
+    font: 4rem/1 "Noto Sans", sans-serif;
+    margin: 2rem 0 4rem;
+    color: #fff;
+}
+
+
+h2, h3 {
+    text-align: left;
+    font: 2.6rem/1 "Noto Sans", sans-serif;
+    /*font-weight: 600;*/
+    margin: 1rem 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+p {margin-bottom: 1rem;}
+
+#costs {margin-top: 2rem;}
+
+/* Structure ============================== */
+body {
+    max-width: 100rem;
+    margin: 10rem auto 20rem;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+label:not(#jewelryColor label) {
+    content: "";
+    display: block;
+    clear: both;
+    margin-top: 1.5rem;
+}
+
+#outputInfo {
+    font: 1.6rem/1.5 "Noto Sans", sans-serif;
+    width: calc(100%/2 - 3rem);
+    margin-left: 3rem;
+    float: right;
+}
+
+#outputInfo::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Styles ============================== */
+input {
+    font: 1.4rem/2rem Arial, Helvetica, sans-serif;
+    padding: 1px 5px;
+    background: #410303;
+    border-radius: .25rem;
+    border: none;
+}
+
+button {
+    position: relative;
+    margin: 2rem 1rem;
+    text-transform: uppercase;
+    padding: 4px 17px;
+    height: 30px;
+    z-index: 1;
+    color: #fff;
+    border: none;
+    background-color: #f80505;
+    background-image: linear-gradient(#f80505, #410303);
+    background-size: 100%;
+    border-radius: .25rem;
+    box-shadow: 0 1px 4px -2px #000;
+    text-shadow: 0 -1px #000;
+}
+
+button:after{
+    content:'';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 46%;
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+}
+
+button:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+button:disabled {
+    color: #ccc;
+    cursor: auto;
+    background: #8ca0ac;
+}
+
+/* Form ============================== */
+form {
+    background: #ffffff url("../images/unsplash.jpg") -125px -40px;
+    background-size: cover;
+    position: relative;
+    width: calc(100%/2 - 3rem);
+    margin-left: 3rem;
+    float: left;
+}
+
+fieldset {border: none;}
+
+#ownerInfo {
+    border: 3px solid #f80505;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px 5px #7e2626;
+}
+
+#buttons {text-align: center;}
+
+li {display: inline-block;}
+
+input {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    margin-top: 1rem;
+    border: 1px solid #f80505;
+    color: #fff;
+
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    background-color: #200;
+    box-shadow: 0 0 5px 5px #F80505;
+    border: 1px solid #fff;
+}
+
+/* Output Info ============================== */
+
+#stats p{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#inform{
+    padding: 2rem 0;
+    text-align: center;}
+
+#stats p:nth-of-type(5) {
+    margin: 2rem auto;
+}
+
+#output {
+    padding-top: .5rem;
+    clear: both;
+}
+
+table {
+    visibility: hidden;
+    margin: 5rem 0 5rem 15rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+th {
+    font: 700 1.4rem/1.6 "Noto Sans", sans-serif;
+    background-color: #200;
+    padding: 2.4rem 4.5rem;
+    outline: 2px solid #f80505;
+    text-align: center;
+
+}
+
+td {
+    padding: 1rem 2rem;
+    outline: 2px solid #F80505;
+    text-align: center;
+}
+
+td > img:hover {
+    transform: scale(4);
+}
+
+#lastOut {
+    visibility: hidden;
+    font: 700 1.4rem/1.6 "Noto Sans", sans-serif;
+    padding: 2.4rem 1.8rem;
+    margin-right: 17.14rem;
+    margin-top: -6rem;
+    float: right;
+}

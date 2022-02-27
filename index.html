@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brian Alvarado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1><strong>MVC</strong> <span style="color:#f80505">factory</span></h1>
+</header>
+
+
+<form name="myForm" action="#urlfordata" method="post" autocomplete="off">
+
+    <fieldset id="ownerInfo">
+        <fieldset id="oInfo">
+            <h2><strong>owner</strong> <span style="color:#f80505">information</span></h2>
+
+            <div>
+                <label for="name">first name: (letters only)</label>
+                <input type="text" name="name" id="name" pattern="[A-Za-z]+" minlength="2" maxlength="10" title="Letters only please!" placeholder="First Name:" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset id="jewelryColor">
+            <h2><strong>jewelry</strong> <span style="color:#f80505">color</span></h2>
+            <p>please select a color for the jewelry</p>
+            <ul class="colors">
+                <li>
+                    <input type="radio" name="color" id="white" value="white" required>
+                    <label for="white">white</label>
+                </li>
+                <li>
+                    <input type="radio" name="color" id="yellow" value="yellow" required>
+                    <label for="yellow">yellow</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset id="jewelryType">
+            <h2><strong>jewelry</strong> <span style="color:#f80505">type</span></h2>
+
+            <div>
+                <label for="type">please enter ring, necklace or bracelet</label>
+                <input type="text" name="type" id="type" pattern="[A-Za-z]+" minlength="4" maxlength="8" title="Letters only please!" placeholder="Jewelry type:" required>
+            </div>
+            <p id="costs"><strong>pricing:</strong> <strong>r</strong>ing $899.99 <strong>b</strong>racelet $1,099.99 <strong>n</strong>ecklace $1,299.99</p>
+
+        </fieldset>
+        <div id="buttons">
+            <button type="submit" id="addButton">add</button>
+            <button type="submit" id="displayButton" disabled>display info</button>
+        </div>
+    </fieldset>
+</form>
+
+<div id="outputInfo">
+    <h3 id="statusOutput"><strong>jewelry added</strong> <span style="color:#f80505"> information</span></h3>
+
+    <div id="stats">
+        <p id="owner"></p>
+        <p id="color"></p>
+        <p id="jType"></p>
+        <p id="price"></p>
+        <p id="inform"></p>
+    </div>
+</div>
+
+<div id="output">
+    <table id="outputTable">
+        <tr>
+            <th id="typeImage">image</th>
+            <th>owner</th>
+            <th>color</th>
+            <th>type</th>
+            <th>price</th>
+        </tr>
+        <tbody id="tBody">
+        </tbody>
+    </table>
+</div>
+<div id="lastOut"></div>
+    <script src="validation.js"></script>
+    <script src="utility.js"></script>
+    <script src="concreteclasses.js"></script>
+    <script src="factory.js"></script>
+    <script defer src="main.js"></script>
+
+</body>
+</html>
